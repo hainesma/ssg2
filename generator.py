@@ -27,25 +27,25 @@ for f in glob.iglob('book/*.md'):
 <header>
 <svg width="300" height="200">
 <polyline points="
-25 75
-25 165
-145 165
-145 55
+15 40
+15 85
+75 85
+75 30
 "></polyline>
 <polyline points="
-5 95
-95 5
-165 75
+5 50
+50 5
+85 40
 "></polyline>
 <polyline points="
-55 45
-55 2
-65 2
-65 35
+30 25
+30 2
+35 2
+35 20
 "></polyline>
-<rect x="45" y="98" width="23" height="67"></rect>
-<rect x="100" y="98" width="20" height="25"></rect>
-<rect x="70" y="45" width="18" height="30"></rect>
+<rect x="25" y="48" width="12" height="37"></rect>
+<rect x="53" y="48" width="10" height="14"></rect>
+<rect x="38" y="23" width="9" height="15"></rect>
 </svg>
 ''')
         file.write(html)
