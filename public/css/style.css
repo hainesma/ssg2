@@ -14,11 +14,45 @@ h3 {
 }
 
 svg {
-  stroke: #000;
+  stroke: #bec2cb;
   stroke-width: 2;
   stroke-linecap: miter;
   stroke-linejoin: miter;
   fill: none;
+}
+
+.chimney {
+  fill: #bec2cb;
+  stroke-width: 0;
+}
+
+.door {
+  fill: #b61f24;
+  stroke: #cccccc;
+}
+
+.house {
+  fill: #223d88;
+  stroke: #cccccc;
+}
+
+.roof {
+stroke-width: 4;
+}
+
+.smoke {
+  fill: #444;
+  stroke-width: 0;
+}
+
+.window {
+  fill: #9cdfff;
+  stroke: #cccccc;;
+}
+
+.yard {
+  fill: lightgreen;
+  stroke-width: 0;
 }
 
 @media (prefers-color-scheme: dark) {

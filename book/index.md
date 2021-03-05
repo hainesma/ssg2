@@ -1,6 +1,6 @@
 « Il faut cultiver notre jardin. »
 
-# Articles
+# Plants
 
 [Predictions for the 2020s](predictions.html)
 
