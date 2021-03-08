@@ -1,10 +1,10 @@
 
 body {
+  color: #444;
+
   max-width: 700px;
   margin: 40px auto;
   padding: 0 10px;
-  font-family: 'Open Sans', sans-serif;
-  color: #444;
 }
 
 h1,
@@ -16,8 +16,8 @@ h3 {
 svg {
   stroke: #bec2cb;
   stroke-width: 2;
-  stroke-linecap: miter;
-  stroke-linejoin: miter;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   fill: none;
 }
 
@@ -51,7 +51,7 @@ stroke-width: 4;
 }
 
 .yard {
-  fill: lightgreen;
+  fill: green;
   stroke-width: 0;
 }
 
@@ -67,5 +67,15 @@ stroke-width: 4;
 
   a:visited {
     color: #ccf;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
   }
 }
