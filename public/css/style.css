@@ -1,7 +1,10 @@
+a:link, a:visited {
+  color: #444;
+}
 
 body {
   color: #444;
-
+  font-family: "Computer Modern Serif", serif;
   max-width: 700px;
   margin: 40px auto;
   padding: 0 10px;
@@ -20,6 +23,16 @@ svg {
   stroke-linejoin: round;
   fill: none;
 }
+
+#header {
+  margin: 12px;
+  text-align: center;
+}
+
+#header p, h2 {
+  margin: 0;
+}
+
 
 .chimney {
   fill: #bec2cb;

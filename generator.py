@@ -22,17 +22,14 @@ for f in glob.iglob('book/*.md'):
 <head>
   <meta charset="utf-8" />
   <title>hainesma</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
-  <style>
-    body {
-      font-family: "Computer Modern Serif", serif;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="fonts/Serif/cmun-serif.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<h2>Mark's Digital Garden<h2>
+<header id="header">
+<h2>Mark’s Digital Garden</h2>
+<p>« Il faut cultiver notre jardin. »</p>
+
 </header>
 ''')
         file.write(html)

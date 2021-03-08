@@ -1,6 +1,5 @@
-« Il faut cultiver notre jardin. »
 
-# Plants
+## Plants
 
 [First](first.html)
 
