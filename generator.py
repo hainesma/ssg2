@@ -22,7 +22,7 @@ for f in glob.iglob('book/*.md'):
 <head>
   <meta charset="utf-8" />
   <title>hainesma</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
   <style>
     body {
       font-family: "Computer Modern Serif", serif;
