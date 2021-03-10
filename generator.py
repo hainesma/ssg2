@@ -27,9 +27,10 @@ for f in glob.iglob('book/*.md'):
 </head>
 <body>
 <header id="header">
-<h2>Mark’s Digital Garden</h2>
-<p>« Il faut cultiver notre jardin. »</p>
-
+<em><a href="index.html">hainesma.com</a> ● 
+« Il faut cultiver notre jardin. » ●
+<script> document.write(new Date().toLocaleDateString()); </script>
+</em>
 </header>
 ''')
         file.write(html)
