@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>hainesma</title>
+  <link rel="stylesheet" type="text/css" href="fonts/Serif/cmun-serif.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header">
+<em><a href="index.html">hainesma.com</a> ● 
+« Il faut cultiver notre jardin. » ●
+<script> document.write(new Date().toLocaleDateString()); </script>
+</em>
+</header>
+<h1>PinePhone Log</h1>
+<p>Mobian Community Edition PinePhone</p>
+<p>and turned it on. The phone prompted me to set a PIN and choose whether to enable encryption.</p>
+<h3>Wifi requires battery</h3>
+<p>The first thing I wanted to do was connect to my wifi, so I went to Settings but didn't see but I didn't see anything about wifi listed. After some research, it turned out the problem was that I hadn't removed the plastic tab from the battery. The wifi hardware apparently can't run directly from the power cable without the battery connected.</p>
+<h3>Choosing a mobile carrier</h3>
+<p>I popped in my AT&amp;T SIM card just to see if it would work. It did not. If I recall correctly, I would need to register the PinePhone's IMEI with AT&amp;T in order to connect. Since I want to keep using my other phone, I decided to look for a pay-as-you-go plan. I came across a number of no-contract plans, but they still charged a monthly rate. Even $10 or $15 a month is more than I want to spend on this endeavor. </p>
+<p>I eventually found <a href="https://tello.com/buy/pay_as_you_go?destination=United+States">Tello</a>, which offers pay-as-you-go credit for 1 min/1¢ or 1 GB/$20 in the United States. I purchases a $20 credit, which will not expire as long as I have an active plan. This includes a free SIM card. </p>
+<h3>Initial Mobian upgrade soft bricked my phone</h3>
+<p>I opened up the <em>Software</em> application and saw there were some updates available. I clicked install and got the following error: "Unable to download updates: The following packages have unmet dependencies:" According to this <a href="https://blog.mobian-project.org/posts/2021/02/09/pam_issue/">blog post</a> from Mobian, the initial upgrade is simply too massive for the <em>Software</em> application to handle. Instead, they say to run the following in the terminal, called <em>King's Cross</em>:</p>
+<p><code>sudo apt update</code><br />
+<code>sudo apt dist-upgrade</code><br />
+<code>sudo apt autoremove</code></p>
+<p>The blog post also mentions an issue with the pluggable authentication module (PAM). In short, after the initial upgrade, the phone needs to reboot before it will accept the PIN. Despite my intention to the contrary, I let my screen fall asleep during the upgrade and was not able to get past the PIN screen. It seems this is often resolved by rebooting the phone, but that was not my experience. I had disabled the locksreen in the settings while the update was in progress, but the change didn't take effect and I was still faced with the lockscreen.</p>
+<p>My next step will be to download a new image and reinstall the OS. Mobian's blog post ends with a comforting reassurance that "Pinephones are really hard to permanently brick."</p>
+</body>
+</html>
