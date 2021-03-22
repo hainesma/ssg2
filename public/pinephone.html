@@ -17,17 +17,68 @@
 <h1>PinePhone Log</h1>
 <p>Mobian Community Edition PinePhone</p>
 <p>and turned it on. The phone prompted me to set a PIN and choose whether to enable encryption.</p>
+<h3>Intentions in buying a PinePhone</h3>
+<p>I want to get away from Android, particularly with all the bloatware. I've purchased some low-end Samsung phones and found them satisfactory, except for the bloatware, which cluttered by UI and zapped the storage space.</p>
+<p>In buying a PinePhone, I want to work toward establishing a straightforward, open source daily driver solution that a non-technical person could use.</p>
 <h3>Wifi requires battery</h3>
 <p>The first thing I wanted to do was connect to my wifi, so I went to Settings but didn't see but I didn't see anything about wifi listed. After some research, it turned out the problem was that I hadn't removed the plastic tab from the battery. The wifi hardware apparently can't run directly from the power cable without the battery connected.</p>
 <h3>Choosing a mobile carrier</h3>
 <p>I popped in my AT&amp;T SIM card just to see if it would work. It did not. If I recall correctly, I would need to register the PinePhone's IMEI with AT&amp;T in order to connect. Since I want to keep using my other phone, I decided to look for a pay-as-you-go plan. I came across a number of no-contract plans, but they still charged a monthly rate. Even $10 or $15 a month is more than I want to spend on this endeavor. </p>
-<p>I eventually found <a href="https://tello.com/buy/pay_as_you_go?destination=United+States">Tello</a>, which offers pay-as-you-go credit for 1 min/1¢ or 1 GB/$20 in the United States. I purchases a $20 credit, which will not expire as long as I have an active plan. This includes a free SIM card. </p>
+<p>I eventually found <a href="https://tello.com/buy/pay_as_you_go?destination=United+States">Tello</a>, which offers pay-as-you-go credit for 1 min/1¢ or 1 GB/$20 in the United States. I purchased a $20 credit, which will not expire as long as I have an active plan. This includes a free SIM card. </p>
+<p>By the time the SIM card arrived, I was using PostmarketOS Phosh. I followed the directions from Tello, namely:</p>
+<ul>
+<li>Insert the SIM card with the phone off</li>
+<li>Enter the activation code on the Tello website from my desktop</li>
+<li>Wait five minutes before turning on the phone</li>
+</ul>
+<p>I sent an SMS and made a call from the PinePhone to my Android phone and received both successfully. </p>
 <h3>Initial Mobian upgrade soft bricked my phone</h3>
 <p>I opened up the <em>Software</em> application and saw there were some updates available. I clicked install and got the following error: "Unable to download updates: The following packages have unmet dependencies:" According to this <a href="https://blog.mobian-project.org/posts/2021/02/09/pam_issue/">blog post</a> from Mobian, the initial upgrade is simply too massive for the <em>Software</em> application to handle. Instead, they say to run the following in the terminal, called <em>King's Cross</em>:</p>
 <p><code>sudo apt update</code><br />
 <code>sudo apt dist-upgrade</code><br />
 <code>sudo apt autoremove</code></p>
 <p>The blog post also mentions an issue with the pluggable authentication module (PAM). In short, after the initial upgrade, the phone needs to reboot before it will accept the PIN. Despite my intention to the contrary, I let my screen fall asleep during the upgrade and was not able to get past the PIN screen. It seems this is often resolved by rebooting the phone, but that was not my experience. I had disabled the locksreen in the settings while the update was in progress, but the change didn't take effect and I was still faced with the lockscreen.</p>
+<p>Oh no! Something has gone wrong. A problem has occurred and the system can't recover. Please log out and try again.  Log out.</p>
+<p>Pressing the log out button leads to a black screen.</p>
 <p>My next step will be to download a new image and reinstall the OS. Mobian's blog post ends with a comforting reassurance that "Pinephones are really hard to permanently brick."</p>
+<h3>Flashing the OS</h3>
+<p>I decided to use the <a href="https://xnux.eu/p-boot-demo/">PinePhone multi-distro demo image</a> so that I could try out some of the other operating systems. The multi-distro image contains Arch, Lune, Maemo Leste, KDE Neon, Manjaro, Mobian, Post Market, Sailfish, and Ubuntu Touch. The instructions for writing the image to the SD card were fairly straightforward.</p>
+<p>I want to find the OS that is the closest to being a reliable daily driver. Based on what I've read, Mobian </p>
+<p>Here are my impressions of each OS:</p>
+<h4>Arch ARM</h4>
+<p>Same desktop environment as Mobian</p>
+<h4>Maemo Leste</h4>
+<p>Very strange. Seems to be permanently, or at least by default, in landscape mode. Rather unpolished compared to others. I'm ruling this one out.</p>
+<h4>KDE Neon</h4>
+<p>Angelfish DE</p>
+<h4>Manjaro Phosh / ARM</h4>
+<p>Same DE as Mobian</p>
+<h4>Manjaro Plasma</h4>
+<p>Angelfish DE</p>
+<h4>PostmarketOS Plasma</h4>
+<p>More like a shrunken desktop experience. Actual cursor on the screen. Keyboard is tiny.</p>
+<h4>Postmarket GNOME</h4>
+<p>Not very polished. Rather bare bones. Applications don't fit on screen.</p>
+<h4>Postmark Phosh **</h4>
+<p>Same DE as Mobian. Faster than Mobian. Leading candidate for daily driver.</p>
+<h4>Postmarket SXMO</h4>
+<p>This one gets a lot of hype, and I can see why. It's a totally different experience from all the others. Menus are accessed by pressing the volume up and down buttons, and using the power button to select the option. It shies away from the typical smartphone experience. Some users talk claim it's the best once they configure everything to their liking. Others insist that it will wear out the physical buttons before long.</p>
+<p>Personally, I like it but want to start with one that replicates the standard smartphone experience.</p>
+<h4>Sailfish OS</h4>
+<p>Not open source. Right away, they want me to create a Jolla account. That said, it has a polished look.</p>
+<h4>Ubuntu Touch</h4>
+<p>Sharp, snappy, looks really nice. </p>
+<p>After trying out all these options, I'm going to stick with PostmarketOS Phosh.</p>
+<h3>Installing PostmarketOS Phosh and apps</h3>
+<p>It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain JumpDrive, which allows images to be flashed directly to the eMMC from a desktop via USB.</p>
+<p>Initial update would not work through Software app. Instead, I used <code>apk upgrade -i</code> in the terminal, and it worked. <code>apk</code> is the package manager for Alpine, which postmarketOS is based on.</p>
+<p>I'm still not seeing any apps that aren't already installed in the <em>Software</em> app. But using <code>apk add</code> I can install whatever I need from the terminal.</p>
+<h3>Sending and receiving SMS</h3>
+<p>Sending SMS works reliably. However, there are some issues with receiving SMS:</p>
+<ul>
+<li>When the phone is on and <em>Chats</em> is open to the conversation with my Android, the message shows up and no sounds plays.</li>
+<li>When the phone is on and <em>Chats</em> is open to the conversation with my Android but the app is in the background, no sound plays and no notification shows up. When I go back to the app, the message has been successfully received.</li>
+<li>When the phone is on and <em>Chats</em> is open to the menu with the app in the foreground, the sound plays</li>
+</ul>
 </body>
 </html>
