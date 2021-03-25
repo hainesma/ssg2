@@ -58,7 +58,7 @@ Same desktop environment as Mobian
 
 #### Maemo Leste
 
-Very strange. Seems to be permanently, or at least by default, in landscape mode. Rather unpolished compared to others. I'm ruling this one out.
+Very strange. Seems to be permanently, or at least by default, in landscape mode. Rather unpolished compared to others. I don't even see a phone application. Phone calls do not come through.
 
 #### KDE Neon
 
