@@ -48,13 +48,13 @@
 <h4>Arch ARM</h4>
 <p>Same desktop environment as Mobian</p>
 <h4>Maemo Leste</h4>
-<p>Very strange. Seems to be permanently, or at least by default, in landscape mode. Rather unpolished compared to others. I'm ruling this one out.</p>
+<p>Very strange. Seems to be permanently, or at least by default, in landscape mode. Rather unpolished compared to others. I don't even see a phone application. Phone calls do not come through.</p>
 <h4>KDE Neon</h4>
 <p>Angelfish DE</p>
 <h4>Manjaro Phosh / ARM</h4>
 <p>Same DE as Mobian</p>
 <h4>Manjaro Plasma</h4>
-<p>Angelfish DE</p>
+<p>Angelfish DE. Does not ring. Also requires entering the PIN before answering a call if the phone is locked.</p>
 <h4>PostmarketOS Plasma</h4>
 <p>More like a shrunken desktop experience. Actual cursor on the screen. Keyboard is tiny.</p>
 <h4>Postmarket GNOME</h4>
@@ -70,7 +70,7 @@
 <p>Sharp, snappy, looks really nice. </p>
 <p>After trying out all these options, I'm going to stick with PostmarketOS Phosh.</p>
 <h3>Installing PostmarketOS Phosh and apps</h3>
-<p>It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain JumpDrive, which allows images to be flashed directly to the eMMC from a desktop via USB.</p>
+<p>It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain Jumpdrive, which allows images to be flashed directly to the eMMC from a desktop via USB.</p>
 <p>Initial update would not work through Software app. Instead, I used <code>apk upgrade -i</code> in the terminal, and it worked. <code>apk</code> is the package manager for Alpine, which postmarketOS is based on.</p>
 <p>I'm still not seeing any apps that aren't already installed in the <em>Software</em> app. But using <code>apk add</code> I can install whatever I need from the terminal.</p>
 <h3>Sending and receiving SMS</h3>
@@ -80,5 +80,9 @@
 <li>When the phone is on and <em>Chats</em> is open to the conversation with my Android but the app is in the background, no sound plays and no notification shows up. When I go back to the app, the message has been successfully received.</li>
 <li>When the phone is on and <em>Chats</em> is open to the menu with the app in the foreground, the sound plays</li>
 </ul>
+<h3>Phone calls</h3>
+<p>Ringer sounds even if screen is off. Screen does not light up.</p>
+<h3>Battery</h3>
+<p>The battery level was a 77%. I charged it for several hours. The battery level was then at 61%, but the icon was completely full. A few minutes later, the level was at 53% and the icon was about 2/3 full. At this point, </p>
 </body>
 </html>

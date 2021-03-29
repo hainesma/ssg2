@@ -120,3 +120,7 @@ Sending SMS works reliably. However, there are some issues with receiving SMS:
 ### Phone calls
 
 Ringer sounds even if screen is off. Screen does not light up.
+
+### Battery
+
+The battery level was a 77%. I charged it for several hours. The battery level was then at 61%, but the icon was completely full. A few minutes later, the level was at 53% and the icon was about 2/3 full. At this point, 
