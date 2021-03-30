@@ -2,7 +2,7 @@
 import os
 import glob
 # used to retrieve files matching a specified pattern
-import markdown
+import markdown from markdown
 
 if not os.path.exists('public'):
     os.mkdir('public')
