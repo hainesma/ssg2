@@ -6,7 +6,7 @@ After trying out a number of mobile Linux OSes with the [multi-distro demo image
 
 ### Installing PostmarketOS Phosh and apps
 
-It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain Jumpdrive, which allows images to be flashed directly to the eMMC from a desktop via USB.
+It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain Jumpdrive, which allows images to be flashed directly to the eMMC from a desktop via USB. Use `dd` to flash the image to the eMMC.
 
 Initial update would not work through Software app. Instead, I used `apk upgrade -i` in the terminal, and it worked. `apk` is the package manager for Alpine, which postmarketOS is based on.
 
