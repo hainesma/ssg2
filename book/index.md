@@ -1,6 +1,9 @@
 
 <p class="" markdown="1">
-This is the website of Mark Haines. 
+Hello 
+---
+
+Welcome to my website. It’s a place to document things I’ve been working on and share my insights and ideas.
 </p>
 
 ## Entries
@@ -21,7 +24,7 @@ This is the website of Mark Haines.
 
 ### Musings
 
-[Predictions](predictions.html)
+
 
 ### Art
 

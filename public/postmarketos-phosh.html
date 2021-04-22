@@ -18,7 +18,7 @@
 <h1>Using postmarketOS Phosh on the Pinephone</h1>
 <p>After trying out a number of mobile Linux OSes with the <a href="pinephone-multidistro.html">multi-distro demo image</a>, I decided to go with postmarketOS Phosh, since it's the only one that met the base requirements for a daily driver.</p>
 <h3>Installing PostmarketOS Phosh and apps</h3>
-<p>It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain Jumpdrive, which allows images to be flashed directly to the eMMC from a desktop via USB.</p>
+<p>It turns out it's not possible to install OSes directly from the multi-boot image, but the multi-boot image does contain Jumpdrive, which allows images to be flashed directly to the eMMC from a desktop via USB. Use <code>dd</code> to flash the image to the eMMC.</p>
 <p>Initial update would not work through Software app. Instead, I used <code>apk upgrade -i</code> in the terminal, and it worked. <code>apk</code> is the package manager for Alpine, which postmarketOS is based on.</p>
 <p>I'm still not seeing any apps that aren't already installed in the <em>Software</em> app. But using <code>apk add</code> I can install whatever I need from the terminal.</p>
 </body>
