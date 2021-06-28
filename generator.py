@@ -27,7 +27,6 @@ for f in glob.iglob('book/*.md'):
 <head>
   <meta charset="utf-8" />
   <title>hainesma.com</title>
-  <link rel="stylesheet" type="text/css" href="fonts/Serif/cmun-serif.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
