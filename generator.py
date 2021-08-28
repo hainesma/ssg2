@@ -31,13 +31,13 @@ for f in glob.iglob('book/*.md'):
 </head>
 <body>
 <header id="header">
-<em><a href="index.html">hainesma.com</a> ● 
-« Il faut cultiver notre jardin. » ●
-<script> document.write(new Date().toLocaleDateString()); </script>
-</em>
+<a href="index.html">hainesma.com</a> 
+
 </header>
+<div id="main">
 ''')
         file.write(html)
         file.write('''
+</div>
 </body>
 </html>''')
