@@ -6,6 +6,7 @@ body {
   font-family: 'Abel', sans-serif;
   font-size: 1rem;
   margin: 0;
+  
 }
 
 code {
@@ -32,15 +33,13 @@ svg {
   fill: none;
 }
 
-
-
 #header {
-  background-color: #9f390c ;
+  background-color: #5a8ecd ;
   color: whitesmoke;
   font-family: 'Abel', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 2rem;
+  padding: 2rem 0 2rem 7%;
   position: fixed;
   width: 100%;
 }
@@ -65,13 +64,16 @@ svg {
 }
 
 #main a:link, a:visited {
-  color: #9f390c ;
+  color: #5a8ecd ;
   text-decoration: none;
 }
 
 #main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
   padding: 7%;
-  padding-top: 6rem;
+  padding-top: 5.5rem;
 }
 
 .emoji {
@@ -81,6 +83,34 @@ svg {
 
 .intro {
   background-color: thistle;
+}
+
+footer {
+  background-color: lightgray;
+  height: 6rem;
+}
+
+/* Social media icons - footer */
+.fa {
+  padding: 20px;
+  font-size: 1.5rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #55ACEE;
+  color: white;
 }
 
 

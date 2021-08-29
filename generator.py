@@ -32,6 +32,7 @@ for f in glob.iglob('book/*.md'):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Fira+Code:wght@400;500&family=Montserrat:ital,wght@0,300;1,300&family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header id="header">
@@ -48,5 +49,9 @@ for f in glob.iglob('book/*.md'):
         file.write(html)
         file.write('''
 </div>
+<footer>
+<a href="#" class="fa fa-github"></a>
+<a href="#" class="fa fa-linkedin"></a>
+</footer>
 </body>
 </html>''')
