@@ -31,7 +31,12 @@ for f in glob.iglob('book/*.md'):
 </head>
 <body>
 <header id="header">
-<a href="index.html">hainesma.com</a> 
+<a id="homelink" href="index.html">
+
+<img id="icon" src="./static/house.png">
+
+<span id="hainesma">hainesma.com</span>
+</a> 
 
 </header>
 <div id="main">

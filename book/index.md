@@ -1,13 +1,9 @@
 
-<p class="" markdown="1">
-Hello 
----
+# I'm Mark Haines. 
 
 Welcome to my website. It’s a place to document things I’ve been working on and share my insights and ideas.
-</p>
-
-## Entries
-
+  
+__
 ### PinePhone
 
 [PinePhone Log](pinephone.html)
