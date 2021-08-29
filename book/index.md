@@ -1,5 +1,5 @@
 
-# I'm Mark Haines. 
+# I’m Mark Haines. 
 
 Welcome to my website. It’s a place to document things I’ve been working on and share my insights and ideas.
   

@@ -10,29 +10,33 @@
 }
 
 #icon {
-  height: 4rem;
-  margin: 0 1rem .2rem 0;
+  height: 2rem;
+  margin: 0 .3rem .1rem 0;
   vertical-align:middle;
 }
 
 #main a:link, a:visited {
-  color: black;
-  text-decoration: underline;
+  color: #9f390c ;
+  text-decoration: none;
 }
 
 
 
 body {
   color: rgb(77, 72, 72);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Abel', sans-serif;
+  font-size: 1rem;
   margin: 0;
 }
 
-h2,
-h3 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1,
+h2 {
+  font-family: 'Pragati Narrow', sans-serif;
   line-height: 1.2;
+}
+
+p, h3 {
+  font-size: 1.2rem;
 }
 
 svg {
@@ -46,12 +50,14 @@ svg {
 
 
 #header {
-  background-color: #333;
+  background-color: #9f390c ;
   color: whitesmoke;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2.5rem;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 2rem;
+  position: fixed;
+  width: 100%;
 }
 
 #header p, h2 {
@@ -59,7 +65,10 @@ svg {
 }
 
 #main {
+  overflow: scroll;
   padding: 7%;
+  margin-top: 6rem;
+  position: fixed;
 }
 
 .emoji {
