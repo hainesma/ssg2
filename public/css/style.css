@@ -1,32 +1,17 @@
 
 
-#homelink {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-#hainesma {
-  vertical-align: bottom;
-}
-
-#icon {
-  height: 2rem;
-  margin: 0 .3rem .1rem 0;
-  vertical-align:middle;
-}
-
-#main a:link, a:visited {
-  color: #9f390c ;
-  text-decoration: none;
-}
-
-
 
 body {
   color: rgb(77, 72, 72);
   font-family: 'Abel', sans-serif;
   font-size: 1rem;
   margin: 0;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  font-stretch: 50%;
 }
 
 h1,
@@ -62,6 +47,29 @@ svg {
 
 #header p, h2 {
   margin: 0;
+}
+
+
+
+
+#homelink {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#hainesma {
+  vertical-align: bottom;
+}
+
+#icon {
+  height: 2rem;
+  margin: 0 .3rem .1rem 0;
+  vertical-align:middle;
+}
+
+#main a:link, a:visited {
+  color: #9f390c ;
+  text-decoration: none;
 }
 
 #main {
