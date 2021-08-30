@@ -1,1 +1,2 @@
-static-hosting-aws.md
+# Hosting a Static Website Using AWS 
+

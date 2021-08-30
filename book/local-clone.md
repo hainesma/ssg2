@@ -4,4 +4,4 @@
 - Click the green 'Code' button, and copy the SSH info.
 - Open terminal.
 - Navigate to Sites folder.
-- Paste contents of clipboard and run (`git clone git@github.com:hainesma/ssg2.git`)
+- Paste contents of clipboard and run `git clone git@github.com:hainesma/ssg2.git`
