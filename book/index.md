@@ -5,6 +5,12 @@ Welcome to my website. It’s a place to document things I’ve been working on 
 
 ### Software Portfolio
 
+#### [Wellness App](https://github.com/hainesma/ActualProject1)
+We built this app as our final group project for the Grand Circus C#/.Net bootcamp. 
+
+#### [Real Estate CRUD App](https://github.com/hainesma/HouseStore)
+This is a basic CRUD app with a real estate theme.  
+
 ### Web Development
 
 [Adding Google Fonts to a Website](google-fonts.html)
