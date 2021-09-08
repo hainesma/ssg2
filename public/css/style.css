@@ -10,9 +10,11 @@ body {
 }
 
 code {
+  background-color: aliceblue;
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
   font-stretch: 50%;
+  padding: 0.2rem;
 }
 
 h1,
@@ -90,7 +92,6 @@ ul {
 }
 
 footer {
-  background-color: lightgray;
   height: auto;
   padding: 2rem;
 }

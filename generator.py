@@ -54,9 +54,12 @@ for f in glob.iglob('book/*.md'):
 <a href="https://github.com/hainesma">
 <i class="fab fa-github"></i>
 </a>
-<a href="https://www.linkedin.com/in/hainesma/">
+<a href="https://www.linkedin.com/in/hainesma/ssg2">
 <i class="fab fa-linkedin"></i>
 </a>
+<h6>
+&#169 Mark Haines
+</h6>
 </div>
 </footer>
 </body>
