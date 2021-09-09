@@ -5,15 +5,17 @@ Welcome to my website. It’s a place to document things I’ve been working on 
 
 ### Software Portfolio
 
-#### [Wellness App](https://github.com/hainesma/ActualProject1)
-We built this app as our final group project for the Grand Circus C#/.Net bootcamp. 
+This website ([See GitHub repo](https://github.com/hainesma/ssg2)) - Designed to be portable and fast, I write the pages in markdown and use a Python script to generate HTML files, which are hosted in an S3 bucket.
 
-#### [Real Estate CRUD App](https://github.com/hainesma/HouseStore)
-This is a basic CRUD app with a real estate theme.  
+[Wellness App](https://github.com/hainesma/ActualProject1) - 
+We built this app as our final group project for the Grand Circus bootcamp. It's a C#/.Net app with Angular on the front end. Both the app and database are hosted on Azure.
+
+[Real Estate CRUD App](https://github.com/hainesma/HouseStore) - This is a basic CRUD app with a real estate theme, built in C#/.Net. Both the app and database are hosted on Azure.
 
 ### Quick Reference
 
-[SQL](SQL-quick-reference.html)
+[Four OOP Principles and SOLID Principles](OOP-principles.html)
+[Basic SQL Queries](SQL-quick-reference.html)
 
 ### Web Development
 

@@ -97,6 +97,7 @@ footer {
 }
 
 footer a:link, a:visited {
+  color: #5a8ecd;
   text-decoration: none;
 }
 

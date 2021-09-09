@@ -34,10 +34,35 @@
     Column3 NVARCHAR(20)
 )
 </code></pre>
-<h3>Adding entries into a table</h3>
+<h3>Adding rows to a table</h3>
 <pre><code>INSERT INTO TableName 
 VALUES
 ('Column1 value', 'Column2 value', 'Column3 value'),
+('Column1 value', 'Column2 value', 'Column3 value')
+</code></pre>
+<p>To insert rows with only some of the values filled in, specify which columns the values are for after the name of the table.</p>
+<pre><code>INSERT INTO TableName (Column1, Column3)
+VALUES
+('Column1 value', 'Column3 value'),
+('Column1 value', 'Column3 value')
+</code></pre>
+<h3>Deleting a row from a table</h3>
+<p>The <code>WHERE</code> keyword chooses a row or rows looking for where the specified column contains the specified value.</p>
+<pre><code>DELETE FROM TableName
+WHERE Column1 = 'Column1 value'
+</code></pre>
+<h3>Updating a row</h3>
+<p>The <code>SET</code> keyword sets a new value for the specified column.</p>
+<pre><code>UPDATE TableName
+SET Column3 = 'New Column3 value'
+WHERE Column1 = 'Column1 value'
+</code></pre>
+<h3>Adding columns to a table</h3>
+<pre><code>ALTER TABLE TableName
+ADD Column4 NVARCHAR(20)
+</code></pre>
+<h3>Dropping an entire table</h3>
+<pre><code>DROP TABLE TableName
 </code></pre>
 </div>
 <footer>
