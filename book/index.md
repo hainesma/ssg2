@@ -15,6 +15,7 @@ We built this app as our final group project for the Grand Circus bootcamp. It's
 ### Quick Reference
 
 [Four OOP Principles and SOLID Principles](OOP-principles.html)
+
 [Basic SQL Queries](SQL-quick-reference.html)
 
 ### Web Development
