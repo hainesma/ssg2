@@ -2,9 +2,12 @@ import os
 # used to retrieve files matching a specified pattern
 import glob
 import markdown
+import yaml
+import frontmatter
 
 if not os.path.exists('public'):
     os.mkdir('public')
+    
 
 # collect all the .md files in the 'book' folder
 for f in glob.iglob('book/*.md'):

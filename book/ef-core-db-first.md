@@ -4,6 +4,8 @@ tags: .Net, Entity Framework
 author: Mark Haines
 date: 9/28/2021
 ---
+Test change
+Test2
 
 Entity Framework maps models in a .Net project to tables in a SQL database, allowing us to manipulate the database from within our .Net app.
 

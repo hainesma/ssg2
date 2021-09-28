@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 markdown = "*"
+pyyaml = "*"
+python-frontmatter = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.9.6"

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>hainesma.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Fira+Code:wght@400;500&family=Montserrat:ital,wght@0,300;1,300&family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0959eabcb3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="header">
+<a id="homelink" href="index.html">
+
+<img id="icon" src="./static/house.png">
+
+<span id="hainesma">hainesma.com</span>
+</a> 
+
+</header>
+<div id="main">
+<hr />
+<p>title: Database-First Approach to Entity Framework Core
+tags: .Net, Entity Framework
+author: Mark Haines
+date: 9/28/2021</p>
+<hr />
+<p>Test change
+Test2</p>
+<p>Entity Framework maps models in a .Net project to tables in a SQL database, allowing us to manipulate the database from within our .Net app.</p>
+<p>There are two approaches to setting up an EF Core project: 
+1) Create the database and tables first. Then use EF Core to scaffold the database and generate the models and database context.
+2) Write the models and database context first in C#. Then use EF Core to migrate the database.</p>
+<p>For this project, I will use the database-first approach. There are two reasons for this. One, I find that it's faster to write the SQL query than to write the C# models. But more importantly, it saves a lot of work to have Entity generate the database context, which manages the connection to the database.</p>
+<h2>Steps</h2>
+<ol>
+<li>Create SQL database and tables</li>
+<li>Create a new ASP.NET Core project</li>
+<li>Install EF Core packages</li>
+<li>Scaffold the database</li>
+<li>Set up DbContext service in Startup.cs</li>
+<li>Create database controller</li>
+</ol>
+<h3>Install EF Core packages</h3>
+<p>Open the NuGet package manager</p>
+</div>
+<footer>
+<div id="footer-content">
+<a href="https://github.com/hainesma">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/in/hainesma/ssg2">
+<i class="fab fa-linkedin"></i>
+</a>
+<h6>
+&#169 Mark Haines
+</h6>
+</div>
+</footer>
+</body>
+</html>
